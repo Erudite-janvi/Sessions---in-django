@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+
+    {% if request.session.session_key %}
+    <h1>Welcome, {{ username }}</h1>
+    <a href="{% url 'logout' %}">Logout</a>
+    {% endif %}
+
+  
+</body>
+</html>
